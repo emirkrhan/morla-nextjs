@@ -1,3 +1,6 @@
+import './ui/global.css';
+import { dmsans } from './ui/font';
+
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +8,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${dmsans.className} antialiased`}>{children}</body>
     </html>
   );
 }
